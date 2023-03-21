@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:letterSpacing="0.04"
+            android:text="@string/app_name"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="22dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Please fill your information here!"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:letterSpacing="0.03"
+        android:layout_marginTop="60dp"
+        android:gravity="center">
+
+    </TextView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/weight"
+            android:contentDescription="@string/app_name">
+
+        </ImageView>
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="28dp"
+            android:background="@color/colorGray"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+        </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Enter your weight (KG)"
+            android:textColor="@color/colorWhite"
+            android:textSize="13dp"
+            android:letterSpacing="0.1"
+            android:includeFontPadding="false"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weightEDTX"
+            android:textSize="15sp"
+            android:hint="65, 65.5"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorGray"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:inputType="numberDecimal"
+            android:paddingTop="6dp"
+            android:padding="6dp"
+            android:importantForAutofill="no"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/colorGray">
+
+    </View>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/height"
+            android:contentDescription="@string/app_name">
+
+        </ImageView>
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="28dp"
+            android:background="@color/colorGray"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Enter your height (CM)"
+                android:textColor="@color/colorWhite"
+                android:textSize="13dp"
+                android:letterSpacing="0.1"
+                android:includeFontPadding="false"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/heightEDTX"
+                android:textSize="15sp"
+                android:hint="145, 165.5"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorGray"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:inputType="numberDecimal"
+                android:paddingTop="6dp"
+                android:padding="6dp"
+                android:importantForAutofill="no"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/colorGray">
+
+    </View>
+
+    <Button
+        android:id="@+id/calculateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:background="@color/colorYellow"
+        android:fontFamily="@font/poppins_bold"
+        android:letterSpacing="0.2"
+        android:padding="14sp"
+        android:text="CALCULATE BMI"
+        android:textSize="16sp"/>
+
+
+
+
+</LinearLayout>

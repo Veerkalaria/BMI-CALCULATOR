@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|start"
+    android:background="@drawable/green_bg"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="30dp"
+    android:orientation="vertical"
+    android:id="@+id/containerR"
+    tools:context=".ResultActivity">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="60dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="10dp"
+        android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Your BMI is: "
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/bmiValueTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="26.5"
+        android:textColor="#3F5185"
+        android:textSize="30sp">
+
+    </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/bmiFlagImageView"
+            android:src="@drawable/correct"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/bmiLabelTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="You have a Normal Weight !"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:letterSpacing="0.04"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here is some advice to help you maintain your body weight:  "
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/commentTV">
+
+        </TextView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/advice1IMG"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/active"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/advice1TV"
+                android:text="stay Active!"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/poppins_regular"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/advice2IMG"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/salad"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/advice2TV"
+                android:text="Eat more salad"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/poppins_regular"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/advice3IMG"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/sleep"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/advice3TV"
+                android:text="Sleep well"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/poppins_regular"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
